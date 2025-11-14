@@ -1,0 +1,5 @@
+{
+  "name": "Melody Maker",
+  "description": "A simple web-based melody maker with a grid interface that allows you to create tunes, adjust the tempo, and save/load your creations.",
+  "requestFramePermissions": []
+}
