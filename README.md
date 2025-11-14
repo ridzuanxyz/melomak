@@ -1,4 +1,4 @@
-# Melody Maker Plus
+# melomak
 
 A musical sequencer web app based on Chrome Music Lab’s Melody Maker. Create melodies by clicking on a grid where time moves left to right and pitch goes up to down.
 
