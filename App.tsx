@@ -292,7 +292,7 @@ export default function App() {
     }
     try {
       const dataToSave = { grid, tempo };
-      localStorage.setItem('melody-maker-save', JSON.stringify(dataToSave));
+      localStorage.setItem('melomak-save', JSON.stringify(dataToSave));
       console.log('Melody saved successfully:', dataToSave);
       setShowSaveConfirm(true);
     } catch (error) {
@@ -307,7 +307,7 @@ export default function App() {
       return;
     }
     try {
-      const savedDataString = localStorage.getItem('melody-maker-save');
+      const savedDataString = localStorage.getItem('melomak-save');
       console.log('Loading melody from localStorage:', savedDataString);
 
       if (savedDataString) {
@@ -385,7 +385,7 @@ export default function App() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `melody-maker-${Date.now()}.mid`;
+    a.download = `melomak-${Date.now()}.mid`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -455,7 +455,7 @@ export default function App() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `melody-maker-${Date.now()}.wav`;
+      a.download = `melomak-${Date.now()}.wav`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -519,7 +519,7 @@ export default function App() {
   return (
     <div className="h-screen flex flex-col font-sans overflow-hidden" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
         <header className="p-3 sm:p-4 text-center flex-shrink-0 border-b border-white/20 relative">
-            <h1 style={{ fontSize: '2rem', letterSpacing: '.2rem', fontFamily: 'Quicksand, sans-serif', fontWeight: 700, textTransform: 'uppercase' }} className="text-white">Melody Maker Plus</h1>
+            <h1 style={{ fontSize: '2rem', letterSpacing: '.2rem', fontFamily: 'Quicksand, sans-serif', fontWeight: 700, textTransform: 'uppercase' }} className="text-white">melomak</h1>
         </header>
         <main className="flex-grow flex flex-col w-full max-w-7xl mx-auto overflow-hidden">
             <Grid grid={grid} currentColumn={currentColumn} onNoteClick={handleNoteClick} />

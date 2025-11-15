@@ -1,21 +1,16 @@
 # melomak
 
-A musical sequencer web app based on Chrome Music Lab’s Melody Maker. Create melodies by clicking on a grid where time moves left to right and pitch goes up to down.
+A musical sequencer web app based on Chrome Music Lab's Melody Maker. Create melodies by clicking on a grid where time moves left to right and pitch goes up to down.
 
 ## Features
 
-- **Interactive 8x16 Grid**: Click cells to create musical patterns with color-coded notes
-- **Visual Playback**: Watch your melody play with highlighted columns in real-time
-- **Tempo Control**: Adjust playback speed from 40-240 BPM with a smooth slider
-- **Export Audio**: Export your melodies as MIDI or WAV files for use in other applications
-- **Modern UI**: Beautiful gradient background with glassmorphism design elements
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **No Dependencies**: Runs entirely in your browser using the Web Audio API - no API keys required!
-
-## Export Formats
-
-- **MIDI Export**: Create standard MIDI files compatible with any DAW or music software
-- **WAV Export**: Generate high-quality 44.1kHz stereo audio files ready for sharing or further processing
+- **Interactive 8x16 Grid**: Color-coded musical patterns
+- **Visual Playback**: Real-time column highlighting
+- **Tempo Control**: 40-240 BPM range
+- **Export**: MIDI files (DAW-compatible) and WAV audio (44.1kHz stereo)
+- **Modern UI**: Gradient background with glassmorphism
+- **Responsive**: Works on desktop and mobile
+- **No Dependencies**: Runs entirely in your browser using Web Audio API
 
 ## Run Locally
 
@@ -31,13 +26,7 @@ A musical sequencer web app based on Chrome Music Lab’s Melody Maker. Create m
    npm run dev
    ```
 
-3. Open your browser and navigate to:
-   ```
-   http://localhost:3055
-   ```
-   (Port may vary - check the terminal output for the actual port)
-
-**Note:** No API key required! This app runs entirely in your browser using the Web Audio API.
+3. Open your browser at `http://localhost:3055` (port may vary)
 
 ## How to Use
 
